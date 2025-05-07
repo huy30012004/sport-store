@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng thể thao</title>
+    <!-- Production version of Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-running text-2xl text-blue-600 mr-2"></i>
+                <h1 class="text-xl font-bold text-gray-800">SPORT STORE</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-800 hover:text-blue-600">Trang chủ</a>
+                <a href="#" class="text-gray-800 hover:text-blue-600">Sản phẩm</a>
+                <a href="#" class="text-gray-800 hover:text-blue-600">Giới thiệu</a>
+                <a href="#" class="text-gray-800 hover:text-blue-600">Liên hệ</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-800 hover:text-blue-600">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="text-gray-800 hover:text-blue-600">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="#" class="text-gray-800 hover:text-blue-600 relative">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Thể thao - Sức khỏe - Đam mê</h2>
+            <p class="text-xl mb-8">Khám phá bộ sưu tập dụng cụ thể thao chất lượng cao</p>
+            <button class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Mua ngay</button>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Danh mục sản phẩm</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Category 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Bóng đá" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Bóng đá</h3>
+                        <button class="text-blue-600 hover:text-blue-800">Xem sản phẩm</button>
+                    </div>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Bóng rổ" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Bóng rổ</h3>
+                        <button class="text-blue-600 hover:text-blue-800">Xem sản phẩm</button>
+                    </div>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tennis" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Tennis</h3>
+                        <button class="text-blue-600 hover:text-blue-800">Xem sản phẩm</button>
+                    </div>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Chạy bộ" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Chạy bộ</h3>
+                        <button class="text-blue-600 hover:text-blue-800">Xem sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Sản phẩm nổi bật</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Giày bóng đá" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">-20%</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Giày bóng đá Adidas</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(24 đánh giá)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-gray-500 line-through">2.500.000đ</span>
+                                <span class="text-red-500 font-bold ml-2">2.000.000đ</span>
+                            </div>
+                            <button class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700" data-product-id="1">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Bóng rổ" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Bóng rổ Spalding</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(18 đánh giá)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-red-500 font-bold">1.200.000đ</span>
+                            <button class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1516043827470-d52af543356a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Vợt tennis" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Vợt tennis Wilson</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(32 đánh giá)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-red-500 font-bold">3.500.000đ</span>
+                            <button class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SPORT STORE</h3>
+                    <p class="text-gray-400">Chuyên cung cấp dụng cụ thể thao chất lượng cao với giá cả hợp lý.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Liên kết</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Trang chủ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sản phẩm</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Giới thiệu</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Hỗ trợ</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Liên hệ</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">123 Đường Thể Thao, Hà Nội</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">0123 456 789</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">info@sportstore.vn</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>© 2023 SPORT STORE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+        // Connect add to cart buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('button.bg-blue-600');
+            
+            addToCartButtons.forEach(button => {
+                const productId = parseInt(button.dataset.productId);
+                button.addEventListener('click', function() {
+                    cart.add(productId);
+                    
+                    // Animation feedback
+                    button.classList.add('animate-ping');
+                    setTimeout(() => {
+                        button.classList.remove('animate-ping');
+                    }, 500);
+                    
+                    // Show success message
+                    const product = cart.getProductInfo(productId);
+                    alert(`Đã thêm ${product.name} vào giỏ hàng!`);
+                    
+                    // Force update cart count immediately
+                    cart.updateCartCount();
+                });
+            });
+            
+            // Initialize cart count on page load
+            cart.updateCartCount();
+        });
+    </script>
+</body>
+</html>
